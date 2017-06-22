@@ -1,0 +1,429 @@
+/*
+* @Author: ronnie
+* @Date:   2017-04-17
+* @Last Modified by:   ronnie
+* @Last Modified time:
+*/
+
+/**
+* header区域
+*/
+header{
+    background: #f7f7f7;
+    padding-top: 100px;
+}
+@media screen and (max-width: 768px){
+    header{
+        height: 450px;
+        padding-top: 70px;
+    }
+}
+@media screen and (min-width: 768px){
+    header{
+        height: 985px;
+    }
+}
+
+/*seo_banner区域*/
+header > #seo_banner {
+
+}
+header > #seo_banner > .banner-content{
+    padding-top: 116px;
+}
+header > #seo_banner > .banner-content img{
+    margin: 80px auto;
+}
+header > #seo_banner > .banner-content h3{
+    color:#333333;
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+header > #seo_banner > .banner-content p{
+    color:#666666;
+    font-size: 16px;
+    line-height: 24px;
+    padding: 30px 0 30px 0;
+    margin-top: 15px;
+}
+@media screen and (max-width:767px){
+    header > #seo_banner > .banner-content{
+        padding-top: 5%;
+    }
+    header > #seo_banner > .banner-content h3 {
+        font-size: 26px;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    header > #seo_banner > .banner-content p{
+        padding-top: 5%;
+        padding-bottom: 0;
+        font-size: 16px;
+        line-height: 24px;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    header > #seo_banner > .banner-content img {
+        margin: 3% auto 0 auto;
+        max-height: 200px;
+    }
+}
+/**
+* seo_service区域
+*/
+#seo_service {
+    padding-bottom: 170px;
+}
+#seo_service .service-title {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+#seo_service .service-title h3{
+    color:#333333;
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+#seo_service .service-title span{
+    display: inline-block;
+    width: 50px;
+    height:2px;
+    background-color: #5dc9c9;
+}
+#seo_service .service-title p{
+    color:#666666;
+    font-size: 16px;
+    line-height: 24px;
+    padding: 30px 0 30px 0;
+    margin-top: 15px;
+}
+#seo_service > .container > .service-content {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+#seo_service > .container > .service-content .col-md-4{
+    padding: 0 25px;
+}
+#seo_service > .container > .service-content img{
+    padding-bottom: 50px;
+}
+#seo_service > .container > .service-content h4{
+    font-size: 20px;
+}
+#seo_service > .container > .service-content p{
+    color:#666666;
+    font-size: 15px;
+    line-height: 25px;
+    padding: 20px 0 30px 0;
+    /*margin-top: 5px;*/
+}
+@media screen and (max-width:1200px){
+    #seo_service > .container > .service-content p {
+        font-size: 14px;
+    }
+    #seo_service > .container > .service-content p br{
+        display: none;
+    }
+}
+@media screen and (max-width:992px){
+    #seo_service > .container > .service-content h4 {
+        font-size: 18px;
+    }
+    #seo_service .service-title {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    #seo_service > .container > .service-content {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    #seo_service {
+        padding-bottom: 100px;
+    }
+}
+@media screen and (max-width:767px){
+    #seo_service .service-title {
+        padding-top: 10%;
+        padding-bottom: 5%;
+    }
+    #seo_service .service-title h3 {
+        font-size: 26px;
+        margin-bottom: 15px;
+    }
+    #seo_service .service-title p {
+        padding: 5% 0 3% 0;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    #seo_service > .container > .service-content {
+        padding-top: 5%;
+        padding-bottom: 10%;
+    }
+    #seo_service > .container > .service-content .col-md-4{
+        padding-bottom: 5%;
+    }
+    #seo_service > .container > .service-content img{
+        padding-bottom: 5%;
+    }
+    #seo_service > .container > .service-content p{
+        padding: 5% 0 5% 0;
+        font-size: 14px;
+        line-height: 22px;
+    }
+    #seo_service {
+        padding-bottom: 5%;
+    }
+}
+
+/**
+* seo_firm区域
+*/
+#seo_firm {
+    background: #f7f7f7;
+    padding-bottom: 120px;
+}
+#seo_firm .firm-title {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+#seo_firm .firm-title h3{
+    color:#333333;
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+#seo_firm .firm-title span{
+    display: inline-block;
+    width: 50px;
+    height:2px;
+    background-color: #5dc9c9;
+}
+#seo_firm .firm-title p{
+    color:#666666;
+    font-size: 16px;
+    line-height: 24px;
+    padding: 30px 0 30px 0;
+    margin-top: 15px;
+}
+#seo_firm > .container > .firm-content {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+#seo_firm > .container > .firm-content .col-md-6:nth-of-type(2){
+    padding-left: 65px;
+    padding-top: 15px;
+    /*padding-bottom: 36px;*/
+}
+#seo_firm > .container > .firm-content .col-md-6:nth-of-type(2) .media {
+    padding-bottom: 20px;
+}
+#seo_firm > .container > .firm-content .col-md-6:nth-of-type(2) .media:nth-of-type(2) {
+    padding-top: 20px;
+    margin-top: 0;
+}
+#seo_firm > .container > .firm-content .col-md-6:nth-of-type(2) .media:nth-of-type(3) {
+    padding-top: 20px;
+    padding-bottom: 0;
+    margin-top: 0;
+}
+#seo_firm > .container > .firm-content .media .media-body {
+    padding-left: 25px;
+}
+#seo_firm > .container > .firm-content .media .media-body p{
+color:#666666;
+font-size: 15px;
+line-height: 25px;
+padding:25px 0;
+margin-bottom: 0;
+/*margin-top: 5px;*/
+}
+
+@media screen and (max-width:1200px){
+    #seo_firm > .container > .firm-content .col-md-6:nth-of-type(2) {
+        padding-top: 5px;
+    }
+    #seo_firm > .container > .firm-content .col-md-6:nth-of-type(2) .media {
+        padding-bottom: 10px;
+    }
+    #seo_firm > .container > .firm-content .col-md-6:nth-of-type(2) .media:nth-of-type(2) {
+        padding-top: 10px;
+    }
+    #seo_firm > .container > .firm-content .col-md-6:nth-of-type(2) .media:nth-of-type(3) {
+        padding-top: 10px;
+    }
+}
+@media screen and (max-width:992px){
+    #seo_firm .firm-title {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    #seo_firm > .container > .firm-content {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    #seo_firm > .container > .firm-content .col-md-6:nth-of-type(1){
+        padding-top: 3%;
+    }
+    #seo_firm > .container > .firm-content .col-md-6:nth-of-type(2){
+        padding-left: 15px;
+        padding-top: 0;
+    }
+    #seo_firm > .container > .firm-content .col-md-6:nth-of-type(2) .media {
+        padding: 0;
+        max-height: 90px;
+    }
+    #seo_firm > .container > .firm-content .col-md-6:nth-of-type(2) .media + .media{
+        padding: 0;
+    }
+    #seo_firm > .container > .firm-content .col-md-6:nth-of-type(2) {
+        padding-top: 0;
+    }
+    #seo_firm > .container > .firm-content .col-md-6:nth-of-type(2) .media:nth-of-type(2) {
+        padding-top: 0;
+    }
+    #seo_firm > .container > .firm-content .col-md-6:nth-of-type(2) .media:nth-of-type(3) {
+        padding-top: 0;
+    }
+}
+@media screen and (max-width:767px){
+    #seo_firm .firm-title {
+        padding-top: 10%;
+        padding-bottom: 5%;
+    }
+    #seo_firm .firm-title h3 {
+        font-size: 26px;
+        margin-bottom: 15px;
+    }
+    #seo_firm .firm-title p {
+        padding: 5% 0 3% 0;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    #seo_firm > .container > .firm-content {
+        padding-top: 10%;
+        padding-bottom: 5%;
+    }
+    #seo_firm > .container > .firm-content .col-md-6:nth-of-type(2){
+        padding-left: 15px;
+        padding-top: 10%;
+    }
+    #seo_firm > .container > .firm-content .col-md-6:nth-of-type(2) .media {
+        padding-bottom: 5%;
+        max-height: 200px;
+    }
+    #seo_firm > .container > .firm-content .col-md-6:nth-of-type(2) .media:nth-of-type(2) {
+        padding-top: 5%;
+        padding-bottom: 5%;
+        margin-top: 0;
+    }
+    #seo_firm > .container > .firm-content .col-md-6:nth-of-type(2) .media:nth-of-type(3) {
+        padding-top: 5%;
+        padding-bottom: 0;
+        margin-top: 0;
+    }
+    #seo_firm {
+        padding-bottom: 10%;
+    }
+    #seo_firm > .container > .firm-content .col-md-6:nth-of-type(2) {
+        padding-top: 10%;
+    }
+}
+
+/**
+* seo_advantage区域
+*/
+#seo_advantage {
+    /*background-color: #f7f7f7;*/
+    padding-bottom: 210px;
+}
+#seo_advantage .advantage-title {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+#seo_advantage .advantage-title h3{
+    color:#333333;
+    font-size: 30px;
+}
+#seo_advantage .advantage-title p{
+    color:#666666;
+    font-size: 16px;
+    line-height: 24px;
+    padding: 30px 0 30px 0;
+    margin-top: 35px;
+}
+#seo_advantage .advantage-title span{
+    display: inline-block;
+    width: 50px;
+    height:2px;
+    background-color: #5dc9c9;
+}
+#seo_advantage .advantage-content {
+    padding-top: 30px;
+}
+#seo_advantage .advantage-content span{
+    display: block;
+    width: 30px;
+    height: 2px;
+    background-color: #5dc9c9;
+    margin-left: 20px;
+    margin-top: 27px;
+}
+#seo_advantage .advantage-content .row p{
+    color:#666666;
+    font-size: 15px;
+    line-height: 24px;
+    padding: 25px 20px 30px 20px;
+}
+
+/*移动端适配*/
+@media screen and (max-width:1200px){
+    #seo_advantage .advantage-content span {
+        margin-left: 10px;
+    }
+    #seo_advantage .advantage-content .row p {
+        color: #666666;
+        font-size: 13px;
+        line-height: 25px;
+        padding: 25px 10px 30px 10px;
+    }
+
+}
+@media screen and (max-width:992px){
+    #seo_advantage {
+        padding-bottom: 10%;
+    }
+    #seo_advantage .advantage-content .row p br{
+        display: none;
+    }
+
+
+}
+@media screen and (max-width:767px){
+    #seo_advantage .advantage-title  {
+        padding-top: 10%;
+        padding-bottom: 5%;
+    }
+    #seo_advantage .advantage-title p {
+        padding: 5% 0 3% 0;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    #seo_advantage .advantage-content {
+        padding-top: 5%;
+        padding-bottom: 10%;
+    }
+    #seo_advantage .advantage-content span{
+        margin-left: 0;
+        margin-top: 8%;
+    }
+    #seo_advantage .advantage-content .row p{
+        font-size: 16px;
+        line-height: 24px;
+        padding: 25px 0 30px 0;
+        margin-bottom: 0;
+    }
+    #seo_advantage {
+        padding-bottom: 0;
+    }
+
+}
+

@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=9" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <title>order</title>
+    <!-- link -->
+    <link href="../lib/bootstrap/css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="../lib/bootstrap/bootstrap-select/css/bootstrap-select.css">
+    <link rel="stylesheet" href="../lib/bootstrap/bootstrap-date-time-picker/css/bootstrap-datetimepicker.css">
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/order.css">
+    <!--[if lt IE 9]>
+    <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<nav class="navbar navbar-appcpi navbar-static-top" data-spy="affix">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#nav_menu" aria-expanded="false">
+                <span class="sr-only">切换菜单显示</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">
+                <img src="../img/logo_bill.png" alt="站点logo" class="img-responsive">
+            </a>
+        </div>
+        <div class="collapse navbar-collapse" id="nav_menu">
+            <ul class="nav navbar-nav">
+                <li><a href="#" class="text-center">首页</a></li>
+                <li id="nav_service">
+                    <a href="#" class="text-center">服务<b class="caret"></b></a>
+                    <ul>
+                        <li><a href="#">榜单优化</a></li>
+                        <li><a href="#">关键词优化</a></li>
+                    </ul>
+                </li>
+                <li><a href="#" class="text-center">干货</a></li>
+                <li class="active"><a href="#" class="text-center">我的订单</a></li>
+                <li><a href="#" class="text-center">登录</a></li>
+                <li><a href="#" class="text-center">注册</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<section id="order">
+    <div class="container">
+        <div class="order-title">
+            <h3>我的订单</h3>
+        </div>
+        <div class="order-select">
+            <div class="row">
+                <div class="col-lg-8">
+                    <ul class="clearfix">
+                        <li>
+                            <div class="form-group">
+                                <select class="selectpicker" data-live-search="true" data-size="10" title="国家地区">
+                                    <option>全部</option>
+                                    <option>Albania</option>
+                                    <option>Australia</option>
+                                    <option>Brunei Darussalam</option>
+                                    <option>中国</option>
+                                    <option value="42" >台灣</option>
+                                    <option value="41" >新加坡</option>
+                                    <option value="40" >日本</option>
+                                    <option value="39" >澳門</option>
+                                    <option value="38" >香港</option>
+                                    <option value="151" >United Kingdom</option>
+                                    <option value="154" >United States</option>
+                                    <option value="2" >Uruguay</option>
+                                    <option value="46" >Uzbekistan</option>
+                                    <option value="1" >Venezuela</option>
+                                    <option value="45" >Vietnam</option>
+                                    <option value="71" >Yemen</option>
+                                    <option value="70" >Zimbabwe</option>
+                                </select>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="form-group">
+                                <select class="selectpicker" data-size="10" title="设备类型">
+                                    <option>全部</option>
+                                    <option>iphone</option>
+                                    <option>ipad</option>
+                                    <option>其他</option>
+                                </select>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="form-group">
+                                <select class="selectpicker" data-size="10" title="订单类型">
+                                    <option>全部</option>
+                                    <option>免费榜</option>
+                                    <option>付费榜</option>
+                                    <option>热搜</option>
+                                    <option>ASO</option>
+                                </select>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="form-group selectpicker">
+                                <div class="input-group date">
+                                    <input type='text' id='datetimepicker1' class="form-control timer" placeholder="开始时间"  value=""  />
+                                    <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="form-group selectpicker">
+                                <div class="input-group date">
+                                    <input type='text' id='datetimepicker2' class="form-control timer" placeholder="结束时间"  value=""  />
+                                    <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="form-group">
+                                <select class="selectpicker" data-size="10" title="订单状态">
+                                    <option>
+                                        全部&nbsp;(<span>136</span>)
+                                    </option>
+                                    <option>审核中</option>
+                                    <option>做单中</option>
+                                    <option>以上榜</option>
+                                    <option>问题单</option>
+                                    <option>完成单</option>
+                                    <option>维护中</option>
+                                </select>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-sm-7 col-md-5 col-lg-4">
+                    <div class="input-group">
+                        <div class="form-group">
+                            <select class="selectpicker" data-size="10" title="搜索类别">
+                                <option>订单号</option>
+                                <option>APP ID</option>
+                                <option>关键词</option>
+                                <option>名称</option>
+                            </select>
+                        </div><!-- /btn-group -->
+                        <input type="text" class="form-control changWidth" placeholder="输入相关信息">
+                        <button class="btn btn-search">搜索</button>
+                    </div><!-- /input-group -->
+                </div>
+            </div>
+        </div>
+        <div class="order-content">
+            <div class="row">
+                <div class="col-sm-4 col-md-3">
+                    <div class="order-single">
+                        <img src="../img/detail1.png" class="img-responsive">
+                        <div class="content-detail">
+                            <ul>
+                                <li><span>订单号:</span>CPI114878443788979</li>
+                                <li><span>名称:</span>王者荣耀</li>
+                                <li><span>国家:</span>中国</li>
+                                <li><span>设备:</span>iphone</li>
+                                <li><span>类型:</span>ASO</li>
+                                <li><span>目标排名:</span>1</li>
+                                <li><span>最终排名:</span>0</li>
+                                <li><span>到榜时间:</span>02-28 20:15</li>
+                                <li><span>订单状态:</span><i class="status-icon">做单中</i></li>
+                                <li><span>操作:</span><a href="orderdetail.html" class="check-icon">查看</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4 col-md-3">
+                    <div class="order-single">
+                        <img src="../img/detail2.png" class="img-responsive">
+                        <div class="content-detail">
+                            <ul>
+                                <li><span>订单号:</span>CPI114878443788979</li>
+                                <li><span>名称:</span>王者荣耀</li>
+                                <li><span>国家:</span>中国</li>
+                                <li><span>设备:</span>iphone</li>
+                                <li><span>类型:</span>ASO</li>
+                                <li><span>目标排名:</span>1</li>
+                                <li><span>最终排名:</span>0</li>
+                                <li><span>到榜时间:</span>02-28 20:15</li>
+                                <li><span>订单状态:</span><i class="status-icon">做单中</i></li>
+                                <li><span>操作:</span><a href="" class="check-icon">查看</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4 col-md-3">
+                    <div class="order-single">
+                        <img src="../img/detail1.png" class="img-responsive">
+                        <div class="content-detail">
+                            <ul>
+                                <li><span>订单号:</span>CPI114878443788979</li>
+                                <li><span>名称:</span>王者荣耀</li>
+                                <li><span>国家:</span>中国</li>
+                                <li><span>设备:</span>iphone</li>
+                                <li><span>类型:</span>ASO</li>
+                                <li><span>目标排名:</span>1</li>
+                                <li><span>最终排名:</span>0</li>
+                                <li><span>到榜时间:</span>02-28 20:15</li>
+                                <li><span>订单状态:</span><i class="status-icon">做单中</i></li>
+                                <li><span>操作:</span><a href="" class="check-icon">查看</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4 col-md-3">
+                    <div class="order-single">
+                        <img src="../img/detail1.png" class="img-responsive">
+                        <div class="content-detail">
+                            <ul>
+                                <li><span>订单号:</span>CPI114878443788979</li>
+                                <li><span>名称:</span>王者荣耀</li>
+                                <li><span>国家:</span>中国</li>
+                                <li><span>设备:</span>iphone</li>
+                                <li><span>类型:</span>ASO</li>
+                                <li><span>目标排名:</span>1</li>
+                                <li><span>最终排名:</span>0</li>
+                                <li><span>到榜时间:</span>02-28 20:15</li>
+                                <li><span>订单状态:</span><i class="status-icon">做单中</i></li>
+                                <li><span>操作:</span><a href="" class="check-icon">查看</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4 col-md-3">
+                    <div class="order-single">
+                        <img src="../img/detail1.png" class="img-responsive">
+                        <div class="content-detail">
+                            <ul>
+                                <li><span>订单号:</span>CPI114878443788979</li>
+                                <li><span>名称:</span>王者荣耀</li>
+                                <li><span>国家:</span>中国</li>
+                                <li><span>设备:</span>iphone</li>
+                                <li><span>类型:</span>ASO</li>
+                                <li><span>目标排名:</span>1</li>
+                                <li><span>最终排名:</span>0</li>
+                                <li><span>到榜时间:</span>02-28 20:15</li>
+                                <li><span>订单状态:</span><i class="status-icon">做单中</i></li>
+                                <li><span>操作:</span><a href="" class="check-icon">查看</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4 col-md-3">
+                    <div class="order-single">
+                        <img src="../img/detail1.png" class="img-responsive">
+                        <div class="content-detail">
+                            <ul>
+                                <li><span>订单号:</span>CPI114878443788979</li>
+                                <li><span>名称:</span>王者荣耀</li>
+                                <li><span>国家:</span>中国</li>
+                                <li><span>设备:</span>iphone</li>
+                                <li><span>类型:</span>ASO</li>
+                                <li><span>目标排名:</span>1</li>
+                                <li><span>最终排名:</span>0</li>
+                                <li><span>到榜时间:</span>02-28 20:15</li>
+                                <li><span>订单状态:</span><i class="status-icon">做单中</i></li>
+                                <li><span>操作:</span><a href="" class="check-icon">查看</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4 col-md-3">
+                    <div class="order-single">
+                        <img src="../img/detail1.png" class="img-responsive">
+                        <div class="content-detail">
+                            <ul>
+                                <li><span>订单号:</span>CPI114878443788979</li>
+                                <li><span>名称:</span>王者荣耀</li>
+                                <li><span>国家:</span>中国</li>
+                                <li><span>设备:</span>iphone</li>
+                                <li><span>类型:</span>ASO</li>
+                                <li><span>目标排名:</span>1</li>
+                                <li><span>最终排名:</span>0</li>
+                                <li><span>到榜时间:</span>02-28 20:15</li>
+                                <li><span>订单状态:</span><i class="status-icon">做单中</i></li>
+                                <li><span>操作:</span><a href="" class="check-icon">查看</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4 col-md-3">
+                    <div class="order-single">
+                        <img src="../img/detail1.png" class="img-responsive">
+                        <div class="content-detail">
+                            <ul>
+                                <li><span>订单号:</span>CPI114878443788979</li>
+                                <li><span>名称:</span>王者荣耀</li>
+                                <li><span>国家:</span>中国</li>
+                                <li><span>设备:</span>iphone</li>
+                                <li><span>类型:</span>ASO</li>
+                                <li><span>目标排名:</span>1</li>
+                                <li><span>最终排名:</span>0</li>
+                                <li><span>到榜时间:</span>02-28 20:15</li>
+                                <li><span>订单状态:</span><i class="status-icon">做单中</i></li>
+                                <li><span>操作:</span><a href="" class="check-icon">查看</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4 col-md-3">
+                    <div class="order-single">
+                        <img src="../img/detail1.png" class="img-responsive">
+                        <div class="content-detail">
+                            <ul>
+                                <li><span>订单号:</span>CPI114878443788979</li>
+                                <li><span>名称:</span>王者荣耀</li>
+                                <li><span>国家:</span>中国</li>
+                                <li><span>设备:</span>iphone</li>
+                                <li><span>类型:</span>ASO</li>
+                                <li><span>目标排名:</span>1</li>
+                                <li><span>最终排名:</span>0</li>
+                                <li><span>到榜时间:</span>02-28 20:15</li>
+                                <li><span>订单状态:</span><i class="status-icon">做单中</i></li>
+                                <li><span>操作:</span><a href="" class="check-icon">查看</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4 col-md-3">
+                    <div class="order-single">
+                        <img src="../img/detail1.png" class="img-responsive">
+                        <div class="content-detail">
+                            <ul>
+                                <li><span>订单号:</span>CPI114878443788979</li>
+                                <li><span>名称:</span>王者荣耀</li>
+                                <li><span>国家:</span>中国</li>
+                                <li><span>设备:</span>iphone</li>
+                                <li><span>类型:</span>ASO</li>
+                                <li><span>目标排名:</span>1</li>
+                                <li><span>最终排名:</span>0</li>
+                                <li><span>到榜时间:</span>02-28 20:15</li>
+                                <li><span>订单状态:</span><i class="status-icon">做单中</i></li>
+                                <li><span>操作:</span><a href="" class="check-icon">查看</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="order-warn">
+                <p class="text-center">没有更多订单了</p>
+            </div>
+        </div>
+    </div>
+</section>
+<footer>
+    <div class="container footer-container">
+        <div class="row">
+            <div class="col-md-5 firm">
+                <div class="logo-area">
+                    <img src="../img/footer-logo.png" alt="">
+                    <span></span>
+                </div>
+                <p>西安乐推网络信息科技有限公司投建于2009年,迄今为止,通过不断的创新发展和卓有成效的经营管理,公司在网络营销和移动广告领域
+                    赢得了良好的声誉,并形成了广泛的市场会影响.
+                </p>
+                <ul class="firm-list clearfix">
+                    <li><a href="#">关于我们</a></li>
+                    <li><a href="#">联系我们</a></li>
+                    <li><a href="#">隐私条例</a></li>
+                </ul>
+            </div>
+            <div class="col-md-4 email">
+                <div class="email-area">
+                    <h3>Contact us</h3>
+                    <span></span>
+                </div>
+                <form action="">
+                    <div class="row">
+                        <div class="col-md-10 col-xs-10 email-input">
+                            <input type="email" name="" id="" class="form-control" placeholder="输入您的邮箱" >
+                        </div>
+                        <div class="col-md-2 col-xs-2 email-put">
+                            <input type="button" class="form-control email-sub" value="提交">
+                        </div>
+                    </div>
+                </form>
+                <p>Email：marketing@appcpi.com</p>
+                <div class="qq-area">
+                    <i>客服:</i>
+                    <a href="#">
+                        <img src="../img/QQ.png" alt="">
+                    </a>
+                    <a href="#">
+                        <img src="../img/QQ.png" alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-3 weChat text-center">
+                <div class="weChat-icon">
+                    <img src="../img/weChat.jpg" alt="">
+                </div>
+                <p>关注ASOFOX获得源头信息</p>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- scripts -->
+<script src="../lib/jquery/jquery.min.js"></script>
+<script src="../lib/bootstrap/js/bootstrap.min.js"></script>
+<script src="../lib/bootstrap/bootstrap-select/js/bootstrap-select.js"></script>
+<script src="../lib/bootstrap/bootstrap-date-time-picker/js/bootstrap-datetimepicker.js"></script>
+<script src="../lib/bootstrap/bootstrap-date-time-picker/js/locales/bootstrap-datetimepicker.zh-CN.js"></script>
+<script src="../lib/jquery/jquery.placeholder.min.js"></script>
+<script src="../js/common.js"></script>
+<script src="../js/order.js"></script>
+</body>
+</html>

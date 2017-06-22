@@ -1,0 +1,492 @@
+/*
+* @Author: ronnie
+* @Date:   2017-04-17
+* @Last Modified by:   ronnie
+* @Last Modified time:
+*/
+
+/**
+* Bootstrap扩展
+**/
+.nav-pills > li > a {
+    border-radius: 0;
+}
+.nav-pills > li.active > a,
+.nav-pills > li.active > a:hover,
+.nav-pills > li.active > a:focus {
+    color: #fff;
+    background-color: #337ab7;
+}
+.nav-stacked > li + li {
+    margin-top: 10px;
+    margin-left: 0;
+}
+.nav-pills > li.active > a, .nav-pills > li.active > a:hover, .nav-pills > li.active > a:focus {
+    color: #666666;
+    background-color: #f5f5f5;
+}
+
+
+.btn-mess {
+    color: #666666;
+    background-color: #f5f5f5;
+    border-color: #dcdcdc;
+}
+.btn-mess:focus,
+.btn-mess.focus {
+    color: #333;
+    background-color: #e6e6e6;
+    border-color: #8c8c8c;
+}
+.btn-mess:hover {
+    color: #333;
+    background-color: #e6e6e6;
+    border-color: #adadad;
+}
+.btn-mess:active,
+.btn-mess.active,
+.open > .dropdown-toggle.btn-mess {
+    color: #333;
+    background-color: #e6e6e6;
+    border-color: #adadad;
+}
+.btn-mess:active:hover,
+.btn-mess.active:hover,
+.open > .dropdown-toggle.btn-mess:hover,
+.btn-mess:active:focus,
+.btn-mess.active:focus,
+.open > .dropdown-toggle.btn-mess:focus,
+.btn-mess:active.focus,
+.btn-mess.active.focus,
+.open > .dropdown-toggle.btn-mess.focus {
+    color: #333;
+    background-color: #d4d4d4;
+    border-color: #8c8c8c;
+}
+.btn-mess:active,
+.btn-mess.active,
+.open > .dropdown-toggle.btn-mess {
+    background-image: none;
+}
+.btn-mess.disabled:hover,
+.btn-mess[disabled]:hover,
+fieldset[disabled] .btn-mess:hover,
+.btn-mess.disabled:focus,
+.btn-mess[disabled]:focus,
+fieldset[disabled] .btn-mess:focus,
+.btn-mess.disabled.focus,
+.btn-mess[disabled].focus,
+fieldset[disabled] .btn-mess.focus {
+    background-color: #fff;
+    border-color: #ccc;
+}
+.btn-mess .badge {
+    color: #fff;
+    background-color: #333;
+}
+
+.btn-modify {
+    color: #fff;
+    background-color: #6dd3d1;
+    border-color: #6dd3d1;
+    width:80px;
+}
+.btn-modify:focus,
+.btn-modify.focus {
+    color: #333;
+    background-color: #e6e6e6;
+    border-color: #8c8c8c;
+}
+.btn-modify:hover {
+    color: #333;
+    background-color: #e6e6e6;
+    border-color: #adadad;
+}
+.btn-modify:active,
+.btn-modify.active,
+.open > .dropdown-toggle.btn-modify {
+    color: #333;
+    background-color: #e6e6e6;
+    border-color: #adadad;
+}
+.btn-modify:active:hover,
+.btn-modify.active:hover,
+.open > .dropdown-toggle.btn-modify:hover,
+.btn-modify:active:focus,
+.btn-modify.active:focus,
+.open > .dropdown-toggle.btn-modify:focus,
+.btn-modify:active.focus,
+.btn-modify.active.focus,
+.open > .dropdown-toggle.btn-modify.focus {
+    color: #333;
+    background-color: #d4d4d4;
+    border-color: #8c8c8c;
+}
+.btn-modify:active,
+.btn-modify.active,
+.open > .dropdown-toggle.btn-modify {
+    background-image: none;
+}
+.btn-modify.disabled:hover,
+.btn-modify[disabled]:hover,
+fieldset[disabled] .btn-modify:hover,
+.btn-modify.disabled:focus,
+.btn-modify[disabled]:focus,
+fieldset[disabled] .btn-modify:focus,
+.btn-modify.disabled.focus,
+.btn-modify[disabled].focus,
+fieldset[disabled] .btn-modify.focus {
+    background-color: #fff;
+    border-color: #ccc;
+}
+.btn-modify .badge {
+    color: #fff;
+    background-color: #333;
+}
+
+.pagination-mess > li {
+    display: inline;
+}
+.pagination-mess > li > a,
+.pagination-mess > li > span {
+    position: relative;
+    float: left;
+    padding: 6px 12px;
+    margin-left: -1px;
+    line-height: 1.42857143;
+    color: #999999;
+    text-decoration: none;
+    background-color: #fff;
+    border: 1px solid #ddd;
+}
+.pagination-mess > li:first-child > a,
+.pagination-mess > li:first-child > span {
+    margin-left: 0;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+}
+.pagination-mess > li:last-child > a,
+.pagination-mess > li:last-child > span {
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+.pagination-mess > li > a:hover,
+.pagination-mess > li > span:hover,
+.pagination-mess > li > a:focus,
+.pagination-mess > li > span:focus {
+    z-index: 2;
+    color: #23527c;
+    background-color: #eee;
+    border-color: #ddd;
+}
+.pagination-mess > .active > a,
+.pagination-mess > .active > span,
+.pagination-mess > .active > a:hover,
+.pagination-mess > .active > span:hover,
+.pagination-mess > .active > a:focus,
+.pagination-mess > .active > span:focus {
+    z-index: 3;
+    color: #999999;
+    cursor: default;
+    background-color: #eeeeee;
+    border-color: #ddd;
+}
+.pagination-mess > .disabled > span,
+.pagination-mess > .disabled > span:hover,
+.pagination-mess > .disabled > span:focus,
+.pagination-mess > .disabled > a,
+.pagination-mess > .disabled > a:hover,
+.pagination-mess > .disabled > a:focus {
+    color: #777;
+    cursor: not-allowed;
+    background-color: #fff;
+    border-color: #ddd;
+}
+/**
+* mess区域
+**/
+
+#toggleTab{
+    padding-top: 101px;
+    background: #f7f7f7;
+}
+#toggleTab .toggleTab-content{
+    margin-top: 25px;
+    margin-bottom: 40px;
+    background: #fff;
+    padding-top: 35px;
+    padding-bottom: 28px;
+    border: 1px solid #f3f3f3;
+
+}
+#toggleTab .toggleTab-content .row > .col-md-2{
+    padding-right: 0;
+}
+#toggleTab .toggleTab-content .nav li a {
+    color:#666666;
+    padding-top: 17px;
+    padding-bottom: 17px;
+    font-size: 14px;
+}
+#toggleTab .toggleTab-content .row > .col-md-10{
+    padding-left: 0;
+    border-left: 1px solid #f1f1f1;
+    min-height: 560px;
+}
+#toggleTab .toggleTab-content .row > .col-md-10 .tab-content{
+    padding-left: 20px;
+}
+#toggleTab .toggleTab-content .row > .col-md-10 .tab-content > #mess {
+    margin-top: 10px;
+}
+#toggleTab .toggleTab-content .row > .col-md-10 .tab-content > #mess .head-btn {
+    border-bottom: 1px solid #f0f0f0;
+    padding-left: 20px;
+    padding-bottom: 10px;
+}
+#toggleTab .toggleTab-content .row > .col-md-10 .tab-content > #mess .head-btn a{
+    font-size: 14px;
+    padding: 8px 16px;
+
+}
+#toggleTab .toggleTab-content .row > .col-md-10 .tab-content > #mess .head-btn a + a{
+    margin-left: 14px;
+}
+/*#toggleTab .toggleTab-content .row > .col-md-9 .tab-content > #mess .mess-ul{*/
+    /*padding-left: 20px;*/
+/*}*/
+#toggleTab .toggleTab-content .row > .col-md-10 .tab-content > #mess .mess-ul ul{
+    list-style: none;
+    padding-left: 0;
+}
+#toggleTab .toggleTab-content .row > .col-md-10 .tab-content > #mess .mess-ul ul li{
+    height: 76px;
+    border-bottom: 1px solid #f0f0f0;
+}
+#toggleTab .toggleTab-content .row > .col-md-10 .tab-content > #mess .mess-ul ul li .row {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+#toggleTab .toggleTab-content .row > .col-md-10 .tab-content > #mess .mess-ul ul li .row > .col-md-1 img{
+    padding-top: 22px;
+}
+#toggleTab .toggleTab-content .row > .col-md-10 .tab-content > #mess .mess-ul ul li .row > .col-md-11 .title h4{
+    font-size: 16px;
+    color:#333;
+    margin-top: 18px;
+}
+#toggleTab .toggleTab-content .row > .col-md-10 .tab-content > #mess .mess-ul ul li .row > .col-md-11 .title span{
+    font-size: 14px;
+    color:#333;
+    margin-top: 14px;
+}
+#toggleTab .toggleTab-content .row > .col-md-10 .tab-content > #mess .mess-ul ul li .row > .col-md-11 .content p{
+    font-size: 14px;
+    color:#999999;
+    height:20px;
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;
+}
+#toggleTab .toggleTab-content .row > .col-md-10 .tab-content > #mess .mess-paginate {
+    margin-top: 18px;
+    padding: 0 15px;
+}
+#toggleTab .toggleTab-content .row > .col-md-10 .tab-content > #mess .mess-paginate p{
+    margin-bottom: 0;
+    font-size: 12px;
+    color:#999999;
+    padding-top: 9px;
+}
+#toggleTab .toggleTab-content .row > .col-md-10 .tab-content > #mess .mess-paginate nav > ul{
+    margin:0;
+}
+
+/**
+* account区域样式
+**/
+
+#toggleTab .toggleTab-content .row > .col-md-10 .tab-content > #account{
+
+}
+#toggleTab .toggleTab-content .row > .col-md-10 .tab-content > #account .account-ul{
+
+}
+#toggleTab .toggleTab-content .row > .col-md-10 .tab-content > #account .account-ul ul{
+    list-style: none;
+    padding-left: 0;
+    padding-top: 5px;
+}
+#toggleTab .toggleTab-content .row > .col-md-10 .tab-content > #account .account-ul ul li{
+    padding: 8px 0;
+}
+#toggleTab .toggleTab-content .row > .col-md-10 .tab-content > #account .account-ul ul li span{
+    float:left;
+    font-size: 14px;
+    color:#666666;
+}
+#toggleTab .toggleTab-content .row > .col-md-10 .tab-content > #account .account-ul ul li span:nth-of-type(1){
+    text-align: right;
+    width: 90px;
+    margin-right: 13px;
+    padding: 5px 0;
+}
+.orig{
+    padding: 5px 0;
+}
+#toggleTab .toggleTab-content .row > .col-md-10 .tab-content > #account .account-ul ul li span > input{
+    min-width: 380px;
+}
+
+/**
+* modifyPass区域样式
+**/
+
+#toggleTab .toggleTab-content .row > .col-md-10 .tab-content > #modifyPass .modify-ul ul{
+    list-style: none;
+    padding-left: 0;
+    padding-top: 5px;
+}
+#toggleTab .toggleTab-content .row > .col-md-10 .tab-content > #modifyPass .modify-ul ul li{
+    padding: 8px 0;
+}
+#toggleTab .toggleTab-content .row > .col-md-10 .tab-content > #modifyPass .modify-ul ul li span{
+    float:left;
+    font-size: 14px;
+    color:#666666;
+}
+#toggleTab .toggleTab-content .row > .col-md-10 .tab-content > #modifyPass .modify-ul ul li span:nth-of-type(1){
+    text-align: right;
+    width: 120px;
+    margin-right: 13px;
+    padding: 5px 0;
+}
+#toggleTab .toggleTab-content .row > .col-md-10 .tab-content > #modifyPass .modify-ul ul li span > input{
+    min-width: 380px;
+}
+
+/*移动端响应式布局开始*/
+
+@media screen and (max-width:992px){
+    #toggleTab .toggleTab-content .row > .col-md-10 .tab-content > #mess .mess-ul ul li .row > .col-md-1 img {
+        margin: 0 auto;
+    }
+}
+@media screen and (max-width:767px){
+    #toggleTab {
+        padding-top: 71px;
+    }
+    #toggleTab .toggleTab-content > .row > .col-sm-2 {
+        padding-bottom: 2%;
+    }
+    #toggleTab .toggleTab-content > .row > .col-sm-10 {
+        padding-top: 2%;
+    }
+    #toggleTab .toggleTab-content .row > .col-sm-2 > ul{
+        padding-left: 25px;
+    }
+    #toggleTab .toggleTab-content .row > .col-md-10 .tab-content > #mess .mess-ul ul li .row > .col-md-1 img {
+        margin: 0;
+        padding-top: 5px;
+    }
+    #toggleTab .toggleTab-content .row > .col-md-10 .tab-content > #account .account-ul ul li span:nth-of-type(1){
+        width: 75px;
+        margin-right: 5px;
+    }
+    #toggleTab .toggleTab-content .row > .col-md-10 .tab-content > #account .account-ul ul li span > input {
+        min-width: 180px;
+    }
+    #toggleTab .toggleTab-content .row > .col-md-10 .tab-content > #modifyPass .modify-ul ul li span:nth-of-type(1){
+        width: 85px;
+        margin-right: 5px;
+    }
+    #toggleTab .toggleTab-content .row > .col-md-10 .tab-content > #modifyPass .modify-ul ul li span > input{
+        min-width: 180px;
+    }
+    #toggleTab .toggleTab-content .row > .col-md-10 .tab-content > #mess .mess-ul ul li .row > .col-md-11 .title h4 {
+        float: none!important;
+        margin-top: 5px;
+    }
+    #toggleTab .toggleTab-content .row > .col-md-10 .tab-content > #mess .mess-ul ul li .row > .col-md-11 .title span {
+        float: none!important;
+    }
+    #toggleTab .toggleTab-content .row > .col-md-10 .tab-content > #mess .mess-ul ul li .row > .col-md-11 .content p {
+        /*margin-bottom: 0;*/
+    }
+    #toggleTab .toggleTab-content .row > .col-md-10 .tab-content > #mess .mess-ul ul li {
+        height: auto;
+    }
+    #toggleTab .toggleTab-content .row > .col-md-10 .tab-content > #mess .mess-ul ul a {
+        text-decoration: none;
+    }
+    #toggleTab .toggleTab-content .nav li a {
+        padding: 10px 7px;
+    }
+    #toggleTab .toggleTab-content .row > .col-md-10 .tab-content > #mess .mess-paginate p {
+        float: none!important;
+        padding-bottom: 9px;
+    }
+    #toggleTab .toggleTab-content .row > .col-md-10 .tab-content > #mess .mess-paginate nav {
+        float: none!important;
+    }
+    #toggleTab .toggleTab-content .row > .col-md-10 .tab-content > #mess .mess-paginate nav ul{
+        padding-left: 0;
+    }
+    #toggleTab .toggleTab-content .row > .col-md-10 .tab-content > #mess .head-btn a {
+        font-size: 13px;
+        padding: 1px 5px;
+    }
+    #toggleTab .toggleTab-content .row > .col-md-10 {
+        min-height: 370px;
+    }
+}
+
+/**
+* emailExtend区域样式
+**/
+
+.email-extend {
+    padding-left: 20px;
+    padding-right: 40px;
+}
+.email-extend h4{
+    font-size: 16px;
+    color: #333333;
+    padding-top: 20px;
+}
+.email-extend > span{
+    font-size: 14px;
+    color:#999999;
+}
+.email-extend > .article{
+    padding-top: 40px;
+}
+.email-extend > .article span{
+    display: inline-block;
+    font-size: 14px;
+    color: #999999;
+    margin-bottom: 20px;
+}
+.email-extend > .article p{
+    font-size: 14px;
+    line-height: 30px;
+    color: #999999;
+}
+.email-extend > .article p:nth-of-type(1){
+    text-indent: 2em;
+    margin-bottom: 25px;
+}
+.email-extend > .article p:nth-of-type(2) > a{
+    display: block;
+    max-width: 852px;
+    word-wrap: break-word;
+}
+.email-extend > .article p:nth-of-type(2) > span{
+    margin-top: 60px;
+    margin-bottom: 0;
+}
+@media screen and (max-width:767px){
+    .email-extend {
+        padding-right: 20px;
+    }
+}

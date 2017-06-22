@@ -1,0 +1,245 @@
+/*
+* @Author: ronnie
+* @Date:   2017-04-17
+* @Last Modified by:   ronnie
+* @Last Modified time:
+*/
+
+
+/**
+* Bootstrap扩展
+**/
+
+.btn-contact {
+    color: #fff;
+    background-color: #5dc9c9;
+    border-color: #5dc9c9;
+    width: 135px;
+    height: 35px;
+    font-size: 16px;
+    margin-left: 15%;
+}
+.btn-contact:focus,
+.btn-contact.focus {
+    color: #333;
+    background-color: #e6e6e6;
+    border-color: #8c8c8c;
+}
+.btn-contact:hover {
+    color: #333;
+    background-color: #e6e6e6;
+    border-color: #adadad;
+}
+.btn-contact:active,
+.btn-contact.active,
+.open > .dropdown-toggle.btn-contact {
+    color: #333;
+    background-color: #e6e6e6;
+    border-color: #adadad;
+}
+.btn-contact:active:hover,
+.btn-contact.active:hover,
+.open > .dropdown-toggle.btn-contact:hover,
+.btn-contact:active:focus,
+.btn-contact.active:focus,
+.open > .dropdown-toggle.btn-contact:focus,
+.btn-contact:active.focus,
+.btn-contact.active.focus,
+.open > .dropdown-toggle.btn-contact.focus {
+    color: #333;
+    background-color: #d4d4d4;
+    border-color: #8c8c8c;
+}
+.btn-contact:active,
+.btn-contact.active,
+.open > .dropdown-toggle.btn-contact {
+    background-image: none;
+}
+.btn-contact.disabled:hover,
+.btn-contact[disabled]:hover,
+fieldset[disabled] .btn-contact:hover,
+.btn-contact.disabled:focus,
+.btn-contact[disabled]:focus,
+fieldset[disabled] .btn-contact:focus,
+.btn-contact.disabled.focus,
+.btn-contact[disabled].focus,
+fieldset[disabled] .btn-contact.focus {
+    background-color: #fff;
+    border-color: #ccc;
+}
+.btn-contact .badge {
+    color: #fff;
+    background-color: #333;
+}
+
+/**
+* contactUs区域
+**/
+
+.singleArea{
+    padding-top: 101px;
+    background: #f7f7f7;
+}
+.singleArea .single-content {
+    margin-top: 28px;
+    margin-bottom: 40px;
+    background: #fff;
+    border: 1px solid #f3f3f3;
+    padding: 90px 65px;
+}
+.singleArea .single-content .row .contact-form ul{
+    list-style: none;
+    padding-left: 0;
+}
+.singleArea .single-content .row .contact-form p{
+    color:#666666;
+    margin-bottom: 23px;
+}
+.singleArea .single-content .row .contact-form ul li{
+    margin-bottom: 20px;
+}
+.singleArea .single-content .row .contact-form ul li:nth-of-type(3) label{
+    margin-right: 28px;
+}
+.singleArea .single-content .row .contact-form ul li label{
+    padding-top: 2%;
+    margin-right: 25px;
+    float: left;
+    font-size: 14px;
+    color:#666666;
+}
+.singleArea .single-content .row .contact-form ul li input.form-control{
+    float: left;
+    width: 84%;
+    height: 39px;
+}
+
+/**
+* 404区域样式
+**/
+
+.dismiss h1{
+    font-size: 100px;
+    color: #e9e9e9;
+    padding-top: 80px;
+}
+.dismiss p{
+    font-size: 16px;
+    color: #777777;
+    padding-top: 25px;
+    margin-bottom: 32px;
+}
+.btn-goback{
+    margin-left: 0;
+    width: 103px;
+    margin-bottom: 125px;
+}
+
+/**
+* emailSuccess区域样式
+**/
+
+.emailSuccess img{
+    margin:0 auto;
+    padding-top: 95px;
+    padding-bottom: 40px;
+}
+.emailSuccess p{
+    font-size: 16px;
+    color: #777777;
+    padding-top: 25px;
+    margin-bottom: 32px;
+}
+
+/**
+* emailFail区域样式
+**/
+
+.emailFail img{
+    margin:0 auto;
+    padding-top: 95px;
+    padding-bottom: 40px;
+}
+.emailFail p{
+    font-size: 16px;
+    color: #777777;
+    padding-top: 25px;
+    margin-bottom: 32px;
+}
+.btn-resend{
+    margin-left: 0;
+    width: auto;
+    margin-bottom: 125px;
+}
+
+/*移动端响应*/
+@media screen and (max-width:1200px){
+    .singleArea .single-content .row .contact-form ul li input.form-control {
+        width: 80%;
+    }
+    .btn-auto {
+        margin-left: 19%;
+    }
+}
+@media screen and (max-width:992px){
+    .singleArea .single-content .row .contact-form ul li input.form-control {
+        width: 72%;
+    }
+    .singleArea .single-content .row > div:nth-of-type(1) img {
+        margin-top: 30%;
+    }
+    .btn-auto {
+        margin-left: 26%;
+    }
+}
+@media screen and (max-width:767px){
+    .singleArea {
+        padding-top: 71px;
+    }
+    .singleArea .single-content {
+        padding: 15px 10px;
+    }
+    .singleArea .single-content .row > div:nth-of-type(1) img {
+        margin: 0 auto;
+    }
+    .singleArea .single-content .row > div:nth-of-type(1) {
+        margin-bottom: 5%;
+    }
+    .singleArea .single-content .row .contact-form ul li:nth-last-of-type(1){
+        text-align: center;
+    }
+    .btn-contact {
+        margin-left: 0;
+    }
+    .dismiss h1{
+        padding-top: 15%;
+    }
+    .dismiss p {
+        padding-top: 25px;
+        margin-bottom: 25px;
+    }
+    .btn-goback {
+        margin-bottom: 30%;
+    }
+    .emailSuccess img {
+        padding-top: 20%;
+        padding-bottom: 15%;
+    }
+    .emailSuccess p {
+        padding-top: 25px;
+        margin-bottom: 25px;
+    }
+    .emailFail img {
+        padding-top: 20%;
+        padding-bottom: 15%;
+    }
+    .emailFail p {
+        padding-top: 25px;
+        margin-bottom: 25px;
+    }
+    .btn-resend {
+        margin-left: 0;
+        width: auto;
+        margin-bottom: 30%;
+    }
+}

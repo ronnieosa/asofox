@@ -1,0 +1,47 @@
+/*
+* @Author: ronnie
+* @Date:   2017-04-17
+* @Last Modified by:   ronnie
+* @Last Modified time:
+*/
+
+.textArea {
+    padding-top: 101px;
+    background: #f7f7f7;
+}
+.textArea .text-content {
+    padding: 35px;
+    margin-top: 28px;
+    margin-bottom: 40px;
+    background: #fff;
+    border: 1px solid #f3f3f3;
+}
+
+.textArea .text-content .title {
+    max-width: 320px;
+    padding-top: 5px;
+    padding-bottom: 14px;
+    border-bottom: 1px solid #f0f0f0;
+    margin-bottom: 15px;
+}
+.textArea .text-content .title span{
+    padding: 15px 0;
+    font-size: 16px;
+    color: #333333;
+    border-bottom: 2px solid #6dd3d1;
+}
+.textArea .text-content p{
+    font-size: 14px;
+    line-height: 30px;
+    color: #666666;
+    margin-bottom: 10px;
+}
+.textArea .text-content ul{
+    padding-left: 15px;
+    margin-bottom: 0;
+}
+@media screen and (max-width:767px){
+    .textArea {
+        padding-top: 71px;
+    }
+}

@@ -1,0 +1,526 @@
+/*
+* @Author: ronnie
+* @Date:   2017-04-17
+* @Last Modified by:   ronnie
+* @Last Modified time:
+*/
+
+body {
+    font-family: "Helvetica Neue", Helvetica, 'Microsoft Yahei','微软雅黑', Hiragino Sans GB, WenQuanYi Micro Hei, sans-serif;
+    overflow-x: hidden;
+}
+
+/**
+* Bootstrap扩展
+*/
+.navbar-appcpi {
+    background:#fff;
+    margin-bottom: 0;
+    border: none;
+    top:0;
+    width:100%;
+    border-bottom: 1px solid #e0e0e0;
+    z-index: 1100;
+    position: fixed;
+}
+.navbar-appcpi .navbar-brand {
+    float: left;
+    height: 100px;
+    padding: 25px 15px 23px 15px;
+}
+.navbar-appcpi .navbar-brand:hover,
+.navbar-appcpi .navbar-brand:focus {
+    color: #5e5e5e;
+    background-color: transparent;
+}
+.navbar-appcpi .navbar-text {
+    color: #777;
+}
+.navbar-appcpi .navbar-nav > li > a {
+    font-size: 16px;
+    color: #333333;
+    line-height: 68px;
+    padding-left: 32px;
+    padding-right: 32px;
+}
+.navbar-appcpi .navbar-nav > li > a:hover,
+.navbar-appcpi .navbar-nav > li > a:focus {
+    color: #333333;
+    background-color: transparent;
+    border-bottom: 2px solid #5bbfbe;
+}
+.navbar-appcpi .navbar-nav > .active > a,
+.navbar-appcpi .navbar-nav > .active > a:hover,
+.navbar-appcpi .navbar-nav > .active > a:focus {
+    color: #333333;
+    background-color: transparent;
+    border-bottom: 2px solid #5bbfbe;
+}
+.navbar-appcpi .navbar-nav > .disabled > a,
+.navbar-appcpi .navbar-nav > .disabled > a:hover,
+.navbar-appcpi .navbar-nav > .disabled > a:focus {
+    color: #ccc;
+    background-color: transparent;
+}
+.navbar-appcpi .navbar-toggle {
+    border-color: #ddd;
+    margin-top: 33px;
+}
+.navbar-appcpi .navbar-toggle:hover,
+.navbar-appcpi .navbar-toggle:focus {
+    background-color: #ddd;
+}
+.navbar-appcpi .navbar-toggle .icon-bar {
+    background-color: #888;
+}
+.navbar-appcpi .navbar-collapse,
+.navbar-appcpi .navbar-form {
+    border-color: #e7e7e7;
+}
+.navbar-appcpi .navbar-nav > .open > a,
+.navbar-appcpi .navbar-nav > .open > a:hover,
+.navbar-appcpi .navbar-nav > .open > a:focus {
+    color: #555;
+    background-color: #e7e7e7;
+}
+@media (max-width: 767px) {
+    .navbar-appcpi .navbar-nav .open .dropdown-menu > li > a {
+        color: #777;
+    }
+    .navbar-appcpi .navbar-nav .open .dropdown-menu > li > a:hover,
+    .navbar-appcpi .navbar-nav .open .dropdown-menu > li > a:focus {
+        color: #333;
+        background-color: transparent;
+    }
+    .navbar-appcpi .navbar-nav .open .dropdown-menu > .active > a,
+    .navbar-appcpi .navbar-nav .open .dropdown-menu > .active > a:hover,
+    .navbar-appcpi .navbar-nav .open .dropdown-menu > .active > a:focus {
+        color: #555;
+        background-color: #e7e7e7;
+    }
+    .navbar-appcpi .navbar-nav .open .dropdown-menu > .disabled > a,
+    .navbar-appcpi .navbar-nav .open .dropdown-menu > .disabled > a:hover,
+    .navbar-appcpi .navbar-nav .open .dropdown-menu > .disabled > a:focus {
+        color: #ccc;
+        background-color: transparent;
+    }
+}
+.navbar-appcpi .navbar-link {
+    color: #777;
+}
+.navbar-appcpi .navbar-link:hover {
+    color: #333;
+}
+.navbar-appcpi .btn-link {
+    color: #777;
+}
+.navbar-appcpi .btn-link:hover,
+.navbar-appcpi .btn-link:focus {
+    color: #333;
+}
+.navbar-appcpi .btn-link[disabled]:hover,
+fieldset[disabled] .navbar-appcpi .btn-link:hover,
+.navbar-appcpi .btn-link[disabled]:focus,
+fieldset[disabled] .navbar-appcpi .btn-link:focus {
+    color: #ccc;
+}
+
+/*导航栏样式*/
+nav .collapse > .nav .caret{
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    border-top: 4px solid;
+    display: inline-block;
+    height: 0;
+    margin-left: 6px;
+    vertical-align: middle;
+    width: 0;
+    transition: .5s transform;
+}
+nav .collapse > .nav > #nav_service:hover > a > b.caret{
+    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+}
+nav .collapse > .nav > #nav_account:hover > a > b.caret{
+    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+}
+nav .collapse > .nav {
+    float: right;
+}
+/*类名相同的情况下才能完全覆盖*/
+nav .nav > #nav_service ul{
+    position: absolute;
+    list-style: none;
+    width:100%;
+    left:0;
+    padding-left: 0;
+    background: rgba(60, 60, 60, 0.6);
+    border-radius: 0 0 4px 4px;
+    display: none;
+}
+nav .nav > #nav_account ul{
+    position: absolute;
+    list-style: none;
+    width:100%;
+    left:0;
+    padding-left: 0;
+    background: rgba(60, 60, 60, 0.6);
+    border-radius: 0 0 4px 4px;
+    display: none;
+}
+
+nav .collapse > .nav ul > li{
+    font-size: 13px;
+    display: inline-block;
+    position: relative;
+    clear: both;
+    width: 100%;
+    font-weight: normal;
+    line-height: 25px;
+    padding: 0;
+    text-align: center;
+}
+nav .collapse > .nav ul > li a{
+    text-decoration: none;
+    color:#ccc;
+    clear: both;
+    display: inline-block;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 10px;
+    width: 100%;
+    font-weight: normal;
+}
+#nav_account {
+    display: none;
+}
+#nav_account > ul li:nth-of-type(1) a {
+    position: relative;
+}
+.mess_icon{
+    display: block;
+    width:15px;
+    height:15px;
+    line-height: 16px;
+    border-radius: 15px;
+    background: #f43530;
+    font-size: 9px;
+    color: #fff;
+    position: absolute;
+    top: 4px;
+    left: 84px;
+}
+
+/*nav区域移动端响应*/
+@media screen and (max-width: 992px){
+    .navbar > .container > .collapse li a{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    #nav_service >ul a{
+        padding: 10px 10px;
+    }
+
+}
+@media screen and (max-width: 767px){
+    .navbar-appcpi .navbar-brand {
+        height: 70px;
+        padding: 14px 10px;
+        margin-left: 15px;
+    }
+    .navbar-appcpi .navbar-brand img{
+        height: 40px;
+    }
+    .navbar-appcpi .navbar-toggle {
+        border-color: #ddd;
+        margin-top: 16px;
+        margin-bottom: 15px;
+    }
+    nav .collapse > .nav {
+        float: none;
+    }
+    .navbar-appcpi .navbar-nav > li > a{
+        line-height: 30px;
+    }
+    nav .nav > #nav_service ul {
+        position: static;
+    }
+    nav .nav > #nav_account ul {
+        position: static;
+    }
+    .navbar-nav {
+        margin: 0 -15px;
+    }
+    .mess_icon{
+        left: 55%;
+    }
+}
+
+/**
+* footer页面公共区域样式
+*/
+
+footer{
+    padding-bottom: 40px;
+    border-top: 1px solid #e5e5e5;
+}
+footer > .footer-container{
+    padding-top: 52px;
+    color: #999999;
+}
+footer > .footer-container > .row > .firm{
+    padding-left: 0;
+    /*padding-right: 30px;*/
+}
+footer > .footer-container > .row > .email{
+    padding-left: 55px;
+    padding-right: 0;
+}
+footer > .footer-container > .row > .weChat{
+    padding-left: 110px;
+    padding-right: 0;
+}
+footer > .footer-container span{
+    display: block;
+    width: 29px;
+    height:2px;
+    background: #c7c5c5;
+    margin-top: 22px;
+}
+footer > .footer-container .firm > p {
+    font-size: 14px;
+    font-weight: lighter;
+    line-height: 29px;
+    margin-top: 22px;
+    padding: 0 55px 0 0;
+    margin-bottom: 33px;
+
+}
+footer > .footer-container .firm > .firm-list{
+    list-style: none;
+    margin-left: -3px;
+    margin-bottom: 0;
+}
+footer > .footer-container .firm > .firm-list > li{
+    float: left;
+    padding:0 9px 0 9px;
+}
+footer > .footer-container .firm > .firm-list > li + li{
+    border-left: 1px solid #c0c0c0;
+}
+footer > .footer-container .firm > .firm-list > li:nth-of-type(1){
+    margin-left: -45px;
+}
+footer > .footer-container .firm > .firm-list > li > a{
+    font-size: 14px;
+    font-weight: lighter;
+    color: #999999;
+}
+footer > .footer-container .email > .email-area {
+    padding-bottom: 22px;
+}
+footer > .footer-container .email > .email-area > h3 {
+    margin-top: 0;
+    margin-bottom: 30px;
+    font-size: 18px;
+}
+footer > .footer-container .email > form .row{
+    margin-top: 7px;
+}
+footer > .footer-container .email > form .row .email-input{
+    width: 285px;
+}
+footer > .footer-container .email > form .row .email-sub{
+    width: 65px;
+}
+footer > .footer-container .email > form .row .form-control{
+    height: 40px;
+}
+footer > .footer-container .email > form .email-put{
+    padding-left: 0;
+    padding-right: 0;
+}
+footer > .footer-container .email p {
+    margin: 23px 0;
+    font-size: 14px;
+    /*padding: 0 10px 0 0;*/
+}
+footer > .footer-container .email > .qq-area {
+    padding-top: 4px;
+    padding-bottom: 0;
+}
+footer > .footer-container .email > .qq-area > i{
+    font-size: 14px;
+    font-style: normal;
+    margin-right: 12px;
+}
+footer > .footer-container .email > .qq-area > a{
+    text-decoration: none;
+}
+footer > .footer-container .weChat {
+    padding-top: 54px;
+}
+footer > .footer-container .weChat > .weChat-icon{
+    margin: 0 auto;
+    width: 116px;
+    height: 116px;
+    padding: 5px 5px 5px 5px;
+    border: 1px solid #dddddd;
+}
+footer > .footer-container .weChat > p{
+    margin-top: 23px;
+    margin-bottom: 0;
+}
+/*移动端适配*/
+@media (max-width: 1200px) {
+    footer > .footer-container > .row > .email {
+        padding-left: 10px;
+        padding-right: 0;
+    }
+}
+@media (max-width: 992px) {
+    footer > .footer-container .weChat > .weChat-icon{
+        margin: 0;
+    }
+    footer > .footer-container > .row > .firm {
+        padding-left: 15px;
+    }
+    footer > .footer-container > .row > .email {
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-top: 25px;
+    }
+    footer > .footer-container > .row > .weChat {
+        padding: 20px 15px;
+        text-align: left;
+    }
+}
+@media (max-width: 768px) {
+    footer {
+        padding-bottom: 0;
+    }
+    footer > .footer-container > .row > .email {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    footer > .footer-container .email > form .row .email-input {
+        width: auto;
+    }
+}
+
+/**
+* QQ侧边栏客服
+*/
+
+#qqServer {
+    position: fixed;
+    top: 70%;
+    right: 30px;
+    display: none;
+    z-index: 2;
+}
+#qqServer ul{
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 0;
+    background: #f2f2f2;
+}
+#qqServer ul li:nth-of-type(1) {
+    position: relative;
+}
+#qqServer ul li:nth-of-type(1) a{
+    border-bottom: 1px solid #e9e8e8;
+}
+#qqServer ul li a {
+    text-decoration: none;
+    display: block;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+}
+#qqServer ul li a > img{
+    margin: 0 auto;
+    padding-top: 8px;
+}
+#qqServer ul li:nth-of-type(2) a > img{
+    padding-top: 20px;
+}
+#qqServer ul li a > span{
+    font-size: 12px;
+    color:#666666;
+}
+.kefu_body {
+    position: absolute;
+    /*left: -165px;*/
+    left: 90px;
+    top: 0;
+    width:150px;
+    height: 220px;
+    background: #fff;
+    border-radius: 4px;
+    border: 1px solid #ebebeb;
+    box-shadow: 1px 1px 1px #f3f3f3;
+    opacity: 0;
+}
+.kefu_body > span.direc {
+    border-left: 9px solid #fff;
+    border-right: 9px solid transparent;
+    border-top: 9px solid transparent;
+    border-bottom: 9px solid transparent;
+    display: inline-block;
+    height: 0;
+    width: 0;
+    vertical-align: middle;
+    position:absolute;
+    top: 14px;
+    right:-18px;
+}
+.kefu_body > p{
+    font-size: 14px;
+    color:#999999;
+    padding-top: 15px;
+    padding-bottom: 10px;
+    margin-bottom: 0;
+    border-bottom: 1px solid #f5f5f5;
+}
+#qqServer ul li:nth-of-type(1) .kefu_body > ul {
+    margin-top: 15px;
+    background: #fff;
+}
+#qqServer ul li:nth-of-type(1) .kefu_body > ul li{
+    padding: 5px 0;
+    background: #fff;
+}
+#qqServer ul li:nth-of-type(1) .kefu_body > ul a{
+    display: block;
+    width:110px;
+    height: 32px;
+    border: 1px solid #f2f2f2;
+    border-radius: 4px;
+    margin: 0 auto;
+    padding: 5px 12px;
+}
+#qqServer ul li:nth-of-type(1) .kefu_body > ul a img{
+    float: left;
+    padding-top: 0;
+    margin-right: 8px;
+}
+#qqServer ul li:nth-of-type(1) .kefu_body > ul a p{
+    float: left;
+    margin-bottom: 0;
+    font-size: 14px;
+    color: #666666;
+}
+#qqServer ul li:nth-of-type(1) .kefu_body > ul li:nth-of-type(3){
+    padding-top: 15px;
+}
+/*移动端侧边栏*/
+@media (max-width: 767px) {
+    #qqServer {
+        position: fixed;
+        top: 60%;
+        right: 0;
+    }
+}

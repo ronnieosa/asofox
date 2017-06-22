@@ -1,0 +1,270 @@
+/*
+* @Author: ronnie
+* @Date:   2017-04-17
+* @Last Modified by:   ronnie
+* @Last Modified time:
+*/
+
+/**
+* Bootstrap扩展
+**/
+
+.btn-login {
+    color: #fff;
+    background-color: #5dc9c9;
+    border-color: #5dc9c9;
+    width: 100%;
+    height: 40px;
+}
+.btn-login:focus,
+.btn-login.focus {
+    color: #333;
+    background-color: #e6e6e6;
+    border-color: #8c8c8c;
+}
+.btn-login:hover {
+    color: #333;
+    background-color: #e6e6e6;
+    border-color: #adadad;
+}
+.btn-login:active,
+.btn-login.active,
+.open > .dropdown-toggle.btn-login {
+    color: #333;
+    background-color: #e6e6e6;
+    border-color: #adadad;
+}
+.btn-login:active:hover,
+.btn-login.active:hover,
+.open > .dropdown-toggle.btn-login:hover,
+.btn-login:active:focus,
+.btn-login.active:focus,
+.open > .dropdown-toggle.btn-login:focus,
+.btn-login:active.focus,
+.btn-login.active.focus,
+.open > .dropdown-toggle.btn-login.focus {
+    color: #333;
+    background-color: #d4d4d4;
+    border-color: #8c8c8c;
+}
+.btn-login:active,
+.btn-login.active,
+.open > .dropdown-toggle.btn-login {
+    background-image: none;
+}
+.btn-login.disabled:hover,
+.btn-login[disabled]:hover,
+fieldset[disabled] .btn-login:hover,
+.btn-login.disabled:focus,
+.btn-login[disabled]:focus,
+fieldset[disabled] .btn-login:focus,
+.btn-login.disabled.focus,
+.btn-login[disabled].focus,
+fieldset[disabled] .btn-login.focus {
+    background-color: #fff;
+    border-color: #ccc;
+}
+.btn-login .badge {
+    color: #fff;
+    background-color: #333;
+}
+
+#login{
+    padding-top: 101px;
+    padding-bottom: 125px;
+    background: #f7f7f7;
+}
+#login .login-content{
+    padding-top: 100px;
+}
+#login .login-content .row > div:nth-of-type(1) img{
+    padding-top: 20px;
+}
+#login .login-content .login-form {
+    background: #fff;
+    padding: 40px;
+    max-width: 450px;
+}
+#login .login-content .login-form h4{
+    font-size: 16px;
+    color:#333333;
+    margin-top: 0;
+    margin-bottom: 50px;
+}
+#login .login-content .login-form ul{
+    list-style: none;
+    padding-left: 0;
+}
+#login .login-content .login-form ul > li{
+    margin-bottom: 12px;
+}
+/*警告区域*/
+#login .login-content ul > li > .alert{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: block;
+}
+
+#login .login-content .login-form ul > li input.form-control{
+    height: 40px;
+    font-size: 12px;
+    color: #bfbfbf;
+    /*border: 1px solid #eeeeee;*/
+}
+#login .login-content .login-form ul > li > .code-area > .form-code{
+    float:left;
+    width: 59%;
+    display: inline-block;
+}
+#login .login-content .login-form ul > li > .code-area > #v_container{
+    width: 38%;
+    display: inline-block;
+    height: 40px;
+    float: left;
+    margin-left: 10px;
+}
+#login .login-content .login-form ul > li.li-autoLogin{
+    font-size: 12px;
+    color:#555555;
+    padding-top: 18px;
+}
+#login .login-content .login-form ul > li.li-autoLogin input[type=checkbox] {
+    margin-top: 2px;
+    margin-right: 4px;
+}
+#login .login-content .login-form ul > li.li-autoLogin a{
+    text-decoration: none;
+    color: #555555;
+}
+#login .login-content .login-form ul > li.li-login{
+    padding-top: 9px;
+}
+#login .login-content .login-form ul > li.li-login input[type=button] {
+    font-size: 18px;
+}
+#login .login-content .login-form ul > li:nth-last-of-type(1){
+    padding-top: 9px;
+}
+#login .login-content .login-form ul > li:nth-last-of-type(1) a{
+    display: block;
+    font-size: 16px;
+    color:#333333;
+    text-decoration: none;
+    padding: 9px 0;
+    text-align: center;
+}
+/*sendEmail页面*/
+#login .login-content .send-form {
+    background: #fff;
+    padding: 40px;
+    max-width: 450px;
+}
+#login .login-content .send-form h4{
+    font-size: 16px;
+    color:#333333;
+    margin-top: 0;
+    margin-bottom: 50px;
+}
+#login .login-content .send-form ul{
+    list-style: none;
+    padding-left: 0;
+}
+#login .login-content .send-form ul > li{
+    margin-bottom: 12px;
+}
+#login .login-content .send-form ul > li input.form-control{
+    height: 40px;
+    font-size: 12px;
+    color: #bfbfbf;
+    /*border: 1px solid #eeeeee;*/
+}
+#login .login-content .send-form ul > li.li-next{
+    padding-top: 9px;
+}
+#login .login-content .send-form ul > li:nth-last-of-type(1){
+    padding-top: 9px;
+}
+#login .login-content .send-form ul > li:nth-last-of-type(1) a{
+    display: block;
+    font-size: 16px;
+    color:#333333;
+    text-decoration: none;
+    padding: 9px 0;
+    text-align: center;
+}
+/*resetPass*/
+#login .login-content .reset-form {
+    background: #fff;
+    padding: 40px;
+    max-width: 450px;
+}
+#login .login-content .reset-form h4{
+    font-size: 16px;
+    color:#333333;
+    margin-top: 0;
+    margin-bottom: 50px;
+}
+#login .login-content .reset-form ul{
+    list-style: none;
+    padding-left: 0;
+}
+#login .login-content .reset-form ul > li{
+    margin-bottom: 12px;
+}
+#login .login-content .reset-form ul > li input.form-control{
+    height: 40px;
+    font-size: 12px;
+    color: #bfbfbf;
+    /*border: 1px solid #eeeeee;*/
+}
+#login .login-content .reset-form ul > li.li-confirm{
+    padding-top: 9px;
+}
+#login .login-content .reset-form ul > li:nth-last-of-type(1){
+    padding-top: 9px;
+}
+#login .login-content .reset-form ul > li:nth-last-of-type(1) a{
+    display: block;
+    font-size: 16px;
+    color:#333333;
+    text-decoration: none;
+    padding: 9px 0;
+    text-align: center;
+}
+
+/*移动端响应*/
+@media screen and (max-width:1200px){
+    #login .login-content .login-form ul > li > .code-area > .form-code {
+        width: 58%;
+    }
+}
+@media screen and (max-width:992px){
+    #login .login-content .login-form ul > li > .code-area > .form-code {
+        width: 57%;
+    }
+}
+@media screen and (max-width:767px){
+    #login {
+        padding-top: 71px;
+        padding-bottom: 10%;
+    }
+    #login .login-content {
+        padding-top: 0;
+    }
+    #login .login-content .row > div:nth-of-type(1){
+        margin-bottom: 5%;
+    }
+    #login .login-content .row > div:nth-of-type(1) img {
+        margin: 0 auto;
+        padding-top: 5%;
+    }
+    #login .login-content .row > div:nth-of-type(2) .login-form{
+        margin: 0 auto;
+    }
+    #login .login-content .row > div:nth-of-type(2) .send-form {
+        margin: 0 auto;
+    }
+    #login .login-content .row > div:nth-of-type(2) .reset-form {
+        margin: 0 auto;
+    }
+}

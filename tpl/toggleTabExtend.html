@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=9" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <title>tabs-extend</title>
+    <!-- link -->
+    <link href="../lib/bootstrap/css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/toggleTab.css">
+    <!--[if lt IE 9]>
+    <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<nav class="navbar navbar-appcpi navbar-static-top" data-spy="affix">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#nav_menu" aria-expanded="false">
+                <span class="sr-only">切换菜单显示</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">
+                <img src="../img/logo_bill.png" alt="站点logo" class="img-responsive">
+            </a>
+        </div>
+        <div class="collapse navbar-collapse" id="nav_menu">
+            <ul class="nav navbar-nav">
+                <li><a href="#" class="text-center">首页</a></li>
+                <li id="nav_service">
+                    <a href="#" class="text-center">服务<b class="caret"></b></a>
+                    <ul>
+                        <li><a href="#">榜单优化</a></li>
+                        <li><a href="#">关键词优化</a></li>
+                    </ul>
+                </li>
+                <li><a href="#" class="text-center">干货</a></li>
+                <li><a href="#" class="text-center">我的订单</a></li>
+                <li><a href="#" class="text-center">登录</a></li>
+                <li><a href="#" class="text-center">注册</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<section id="toggleTab">
+    <div class="container">
+        <div class="toggleTab-content">
+            <div class="row">
+                <div class="col-sm-2 col-md-2">
+                    <ul class="nav nav-pills nav-stacked">
+                        <li class="active text-center"><a href="#mess" data-toggle="tab">消息</a></li>
+                        <li class="text-center"><a href="#account" data-toggle="tab">账号设置</a></li>
+                        <li class="text-center"><a href="#modifyPass" data-toggle="tab">修改密码</a></li>
+                        <li class="text-center"><a href="#settings" data-toggle="tab">退出账户</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-10 col-md-10">
+                    <div class="tab-content">
+                        <div class="tab-pane active" id="mess">
+                            <div class="head-btn">
+                                <a href="#" class="btn btn-mess">全部</a>
+                                <a href="#" class="btn btn-mess">已读</a>
+                                <a href="#" class="btn btn-mess">未读</a>
+                            </div>
+                            <div class="email-extend">
+                                <h4>手机号添加到您的帐户</h4>
+                                <span>2017-03-22 10:42:48</span>
+                                <div class="article">
+                                    <span>尊敬的用户：</span><br>
+                                    <p>
+                                        您好！您需要重置密码，请单击下面的链接。您在此处所做的更改将会更新 Creative Cloud 以及您使用 Adobe ID 获得的任何服务的秘密请单
+                                        击下面的链接。您在此处所做的更改将会更新 Creative Cloud 以及您使用 Adobe ID 获得的任何服务的秘密请单击下面。请单击下面的链接。您在
+                                        此处所做的更改将会更新 Creative Cloud 以及您使用 Adobe ID 获得的任何服务的秘密请单击下面。请单击下面的链接。您在此处所做的更改将会
+                                        更新 Creative Cloud 以及您使用 Adobe ID 获得的任何服务的秘密请单击下面。
+                                    </p>
+                                    <p class="clearfix">
+                                        感谢您注册AppCPI会员账号，请点击下面的链接完成注册：<br>
+                                        <a href="#">
+                                            http://apporder.wp-ub.com/mailverify/verify/897eab267fda8f0e4bf7430e391a80bd/eyJpdiI6ImxJcXZGcit5bG45S0lMNzlBXC9Ha3dBPT0
+                                            iLCJ2YWx1ZSI6IkFKK1JJN0RMUVRGd1RxbjIrR3MzN3c9PS
+                                        </a>
+                                        <span class="pull-right">2017年3月22日</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane" id="account">
+                            <div class="account-ul">
+                                <form action="#">
+                                    <ul>
+                                        <li class="clearfix"><span>客户ID :</span><span class="orig">78</span></li>
+                                        <li class="clearfix"><span>账号 :</span><span class="orig">1363143220@qq.com</span></li>
+                                        <li class="clearfix"><span>邮箱 :</span><span class="orig">1363143220@qq.com</span></li>
+                                        <li class="clearfix"><span>用户名 :</span><span><input type="text" class="form-control" placeholder="1363143220@qq.com"></span></li>
+                                        <li class="clearfix"><span>手机号 :</span><span><input type="text" class="form-control" placeholder="18189212707"></span></li>
+                                        <li class="clearfix"><span>Q Q :</span><span><input type="text" class="form-control" placeholder="45636856"></span></li>
+                                        <li class="clearfix"><span>职务 :</span><span><input type="text" class="form-control" placeholder="职务"></span></li>
+                                        <li class="clearfix"><span>公司名 :</span><span><input type="text" class="form-control" placeholder="公司名"></span></li>
+                                        <li class="clearfix"><span>协议框架 :</span><img src="../img/account.png" class="img-responsive"></li>
+                                        <li class="clearfix"><span></span><input type="button" value="修改" class="btn btn-modify"></li>
+                                    </ul>
+
+                                </form>
+                            </div>
+                        </div>
+                        <div class="tab-pane" id="modifyPass">
+                            <div class="modify-ul">
+                                <form action="#">
+                                    <ul>
+                                        <li class="clearfix"><span>旧密码 :</span><span><input type="text" class="form-control" placeholder="输入旧密码"></span></li>
+                                        <li class="clearfix"><span>新密码 :</span><span><input type="text" class="form-control" placeholder="输入新密码"></span></li>
+                                        <li class="clearfix"><span>确认新密码 :</span><span><input type="text" class="form-control" placeholder="再次输入新密码"></span></li>
+                                        <li class="clearfix"><span></span><input type="button" value="修改" class="btn btn-modify"></li>
+                                    </ul>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="tab-pane" id="settings">44444</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<footer>
+    <div class="container footer-container">
+        <div class="row">
+            <div class="col-md-5 firm">
+                <div class="logo-area">
+                    <img src="../img/footer-logo.png" alt="">
+                    <span></span>
+                </div>
+                <p>西安乐推网络信息科技有限公司投建于2009年,迄今为止,通过不断的创新发展和卓有成效的经营管理,公司在网络营销和移动广告领域
+                    赢得了良好的声誉,并形成了广泛的市场会影响.
+                </p>
+                <ul class="firm-list clearfix">
+                    <li><a href="#">关于我们</a></li>
+                    <li><a href="#">联系我们</a></li>
+                    <li><a href="#">隐私条例</a></li>
+                </ul>
+            </div>
+            <div class="col-md-4 email">
+                <div class="email-area">
+                    <h3>Contact us</h3>
+                    <span></span>
+                </div>
+                <form action="">
+                    <div class="row">
+                        <div class="col-md-10 col-xs-10 email-input">
+                            <input type="email" name="" id="" class="form-control" placeholder="输入您的邮箱" >
+                        </div>
+                        <div class="col-md-2 col-xs-2 email-put">
+                            <input type="button" class="form-control email-sub" value="提交">
+                        </div>
+                    </div>
+                </form>
+                <p>Email：marketing@appcpi.com</p>
+                <div class="qq-area">
+                    <i>客服:</i>
+                    <a href="#">
+                        <img src="../img/QQ.png" alt="">
+                    </a>
+                    <a href="#">
+                        <img src="../img/QQ.png" alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-3 weChat text-center">
+                <div class="weChat-icon">
+                    <img src="../img/weChat.jpg" alt="">
+                </div>
+                <p>关注ASOFOX获得源头信息</p>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- scripts -->
+<script src="../lib/jquery/jquery.min.js"></script>
+<script src="../lib/bootstrap/js/bootstrap.min.js"></script>
+<script src="../js/common.js"></script>
+<script src="../js/tab.js"></script>
+</body>
+</html>

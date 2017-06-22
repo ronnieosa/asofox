@@ -1,0 +1,233 @@
+/*
+* @Author: ronnie
+* @Date:   2017-04-17
+* @Last Modified by:   ronnie
+* @Last Modified time:
+*/
+
+
+
+/**
+* header区域
+*/
+header{
+    background: #f7f7f7;
+    padding-top: 100px;
+}
+@media screen and (max-width: 768px){
+    header{
+        height: 450px;
+        padding-top:70px;
+    }
+}
+@media screen and (min-width: 768px){
+    header{
+        height: 985px;
+    }
+}
+
+/*bill_banner区域*/
+header > #bill_banner {
+
+}
+header > #bill_banner > .banner-content{
+    padding-top: 116px;
+}
+header > #bill_banner > .banner-content img{
+    margin: 80px auto;
+}
+header > #bill_banner > .banner-content h3{
+    color:#333333;
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+header > #bill_banner > .banner-content p{
+    color:#666666;
+    font-size: 16px;
+    line-height: 24px;
+    padding: 30px 0 30px 0;
+    margin-top: 15px;
+}
+@media screen and (max-width:767px){
+    header > #bill_banner > .banner-content{
+        padding-top: 5%;
+    }
+    header > #bill_banner > .banner-content h3 {
+        font-size: 27px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+    header > #bill_banner > .banner-content p{
+        padding: 5px 0px;
+        font-size: 16px;
+        line-height: 28px;
+        margin-top: 0;
+    }
+    header > #bill_banner > .banner-content img {
+        margin: 5% auto;
+        max-height: 250px;
+    }
+}
+/**
+* bill_service区域
+*/
+#bill_service {
+    padding-bottom: 170px;
+}
+#bill_service .service-title {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+#bill_service .service-title h3{
+    color:#333333;
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+#bill_service .service-title span{
+    display: inline-block;
+    width: 50px;
+    height:2px;
+    background-color: #5dc9c9;
+}
+#bill_service .service-title p{
+    color:#666666;
+    font-size: 16px;
+    line-height: 24px;
+    padding: 30px 0 30px 0;
+    margin-top: 15px;
+}
+#bill_service > .container > .service-content {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+#bill_service > .container > .service-content .col-md-4{
+    padding: 0 25px;
+}
+#bill_service > .container > .service-content .content{
+    border:1px solid #eeeeee;
+}
+#bill_service > .container > .service-content .content img{
+    padding-top: 50px;
+}
+#bill_service > .container > .service-content .content p{
+    color:#666666;
+    font-size: 18px;
+    line-height: 28px;
+    padding: 30px 0 30px 0;
+    margin-top: 5px;
+}
+@media screen and (max-width:767px){
+    #bill_service .service-title {
+        padding-top: 10%;
+        padding-bottom: 5%;
+    }
+    #bill_service .service-title p {
+        padding: 5% 0 3% 0;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    #bill_service > .container > .service-content {
+        padding-top: 5%;
+        padding-bottom: 10%;
+    }
+    #bill_service > .container > .service-content .col-md-4{
+        padding-bottom: 5%;
+    }
+    #bill_service {
+        padding-bottom: 10%;
+    }
+}
+/**
+* bill_advantage区域
+*/
+#bill_advantage {
+    background-color: #f7f7f7;
+    padding-bottom: 210px;
+}
+#bill_advantage .advantage-title {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+#bill_advantage .advantage-title h3{
+    color:#333333;
+    font-size: 30px;
+}
+#bill_advantage .advantage-title p{
+    color:#666666;
+    font-size: 16px;
+    line-height: 24px;
+    padding: 30px 0 30px 0;
+    margin-top: 35px;
+}
+#bill_advantage .advantage-title span{
+    display: inline-block;
+    width: 50px;
+    height:2px;
+    background-color: #5dc9c9;
+}
+#bill_advantage .advantage-content {
+    padding-top: 30px;
+}
+#bill_advantage .advantage-content span{
+    display: block;
+    width: 30px;
+    height: 2px;
+    background-color: #5dc9c9;
+    margin-left: 20px;
+    margin-top: 27px;
+}
+#bill_advantage .advantage-content .row p{
+    color:#666666;
+    font-size: 15px;
+    line-height: 30px;
+    padding: 25px 20px 30px 20px;
+}
+/*响应式布局开始*/
+@media screen and (max-width:1200px){
+    #bill_advantage .advantage-content span {
+        margin-left: 10px;
+    }
+    #bill_advantage .advantage-content .row p {
+        color: #666666;
+        font-size: 13px;
+        line-height: 25px;
+        padding: 25px 10px 30px 10px;
+    }
+}
+@media screen and (max-width:992px){
+    #bill_advantage .advantage-content .row p br{
+        display: none;
+    }
+}
+@media screen and (max-width:767px){
+    #bill_advantage .advantage-title  {
+        padding-top: 10%;
+        padding-bottom: 5%;
+    }
+    #bill_advantage .advantage-title p {
+        padding: 5% 0 3% 0;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    #bill_advantage .advantage-content {
+        padding-top: 5%;
+        padding-bottom: 10%;
+    }
+    #bill_advantage .advantage-content span{
+        display: block;
+        width: 50px;
+        height: 2px;
+        background-color: #5dc9c9;
+        margin-left: 0;
+        margin-top: 8%;
+    }
+    #bill_advantage .advantage-content .row p{
+        font-size: 16px;
+        line-height: 24px;
+        padding: 25px 0 30px 0;
+        margin-bottom: 0;
+    }
+    #bill_advantage {
+        padding-bottom: 10%;
+    }
+}
